@@ -26,7 +26,7 @@ function MainComponent() {
       </h1>
       <input type="text" onChange={(e) => console.log(e.target.value)} />
       {/* <button onclick="myFunction()">My button</button> */}
-      <button onClick={() => myFunction()}>My button</button>
+      <button onClick={() => myFunction("avi")}>My button</button>
     </div>
   );
 }
