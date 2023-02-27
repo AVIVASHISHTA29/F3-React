@@ -1,6 +1,6 @@
-import Footer from "./Footer.js";
-import Header from "./Header.js";
-import MainComponent from "./MainComponent.js";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import MainComponent from "./components/Main";
 
 function App() {
   return (
@@ -13,3 +13,5 @@ function App() {
 }
 
 export default App;
+
+// JSX = Rendering an HTML element inside a function
