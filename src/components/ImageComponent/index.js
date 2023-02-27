@@ -10,11 +10,11 @@ import "./styles.css";
 // }
 
 function ImageComponent(props) {
-  console.log("PROPS>>>", props, props.id);
+  console.log("PROPS>>>", props);
   return (
     <div className="box">
       <img src={props.dogImage} />
-      <h1>{props.breed}</h1>
+      <h3>{props.breed}</h3>
     </div>
   );
 }
