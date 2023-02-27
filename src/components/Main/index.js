@@ -4,13 +4,9 @@ function MainComponent() {
   const myName = "Avi";
   const flag = false;
 
-  // function myFunction(name) {
-  //   console.log("hi " + name);
-  // }
-
-  const myFunction = () => {
-    sum = num1 + num2;
-  };
+  function myFunction(name) {
+    console.log("hi " + name);
+  }
 
   // var my_name vs var myName
 
@@ -26,7 +22,7 @@ function MainComponent() {
       // }}
       // onMouseOver={() => console.log("mouse is over the h1")}
       >
-        {sum}
+        {myName}
       </h1>
       <input type="text" onChange={(e) => console.log(e.target.value)} />
       {/* <button onclick="myFunction()">My button</button> */}
