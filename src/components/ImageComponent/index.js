@@ -1,6 +1,7 @@
 import "./styles.css";
 
-// function ImageComponent({ dogImage, breed, id }) {
+// function ImageComponent({ dogImage, breed }) {
+//   // { dogImage, breed, id } = props
 //   return (
 //     <div className="box">
 //       <img src={dogImage} />
@@ -9,7 +10,7 @@ import "./styles.css";
 //   );
 // }
 
-function ImageComponent(props) {
+const ImageComponent = (props) => {
   console.log("PROPS>>>", props);
   return (
     <div className="box">
@@ -17,6 +18,6 @@ function ImageComponent(props) {
       <h3>{props.breed}</h3>
     </div>
   );
-}
+};
 
 export default ImageComponent;

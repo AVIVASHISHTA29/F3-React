@@ -4,14 +4,13 @@ import FAQComponent from "./components/FAQComponent";
 import ImageComponent from "./components/ImageComponent";
 
 function App() {
+  const roll = 24;
+
   return (
     <div className="container">
-      {/* {imgArr.map((item) => {
-        return <ImageComponent dogImage={item.dogImage} breed={item.breed} />;
-      })} */}
-      {faqArray.map((item) => {
-        return <FAQComponent text={item} />;
-      })}
+      {imgArr.map((item, i) => (
+        <ImageComponent key={i} breed={item.breed} dogImage={item.dogImage} />
+      ))}
     </div>
   );
 }
